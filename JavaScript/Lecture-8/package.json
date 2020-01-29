@@ -1,0 +1,19 @@
+{
+  "name": "lecture-8",
+  "version": "1.0.0",
+  "main": "sliveCallingServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon liveCallingServer.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.2",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

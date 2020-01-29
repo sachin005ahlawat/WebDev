@@ -1,0 +1,3 @@
+1. module.exports and exports both ara initially empty objects
+2. they both point on same memory location
+3. only module.exports is exported 
