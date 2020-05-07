@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* explain ??*/
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    /* background-color: aqua; */
+}
+.Image{
+    text-align: center;
+}
+.updateProfile{
+    margin-left: 15rem;
+}
+.profile{
+    height: 100vh;
+}
+.profile-page{
+    height: 88vh;
+    width: 39%;
+    margin-left: 35rem;
+    margin-top: 1rem;
+    background-color: gainsboro;
+    position: absolute;
+    margin-top: 5rem;
+    padding: 1rem;
+}
+.apara{
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.text{
+    color: #ee5253;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.anchor{
+    color: #ee5253;
+}
+.user-container{
+    background-color: black;
+}

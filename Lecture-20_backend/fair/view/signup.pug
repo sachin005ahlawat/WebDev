@@ -1,0 +1,20 @@
+extend base
+block content
+    .signUp
+        .signUp-page
+            h2 Sign Up
+            form
+                .name
+                    input.name-text(type='name', placeholder='Name' required)
+                .email    
+                    input.email-text(type='email', placeholder='Email' required)
+                .password
+                    input.password-text(type='password', placeholder='Password' required)
+                .password
+                    input.confirm-text(type='password', placeholder='Confirm Password' reduired)
+                .who  
+                    select.role
+                        option(value='user') user
+                        option(value='admin') admin
+                .btns__container.butt
+                     button.Signup(type="submit").btn.btn-full SIGNUP

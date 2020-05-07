@@ -1,0 +1,112 @@
+extend base
+block header
+   include homenav
+block content
+    section.features
+        h2#awesome AWESOME FEATURES
+        .container-parent
+            .container
+                i.far.fa-calendar-plus.icon
+                h3.feature-heading  365 DAYS/YEAR
+                p.feature-para
+                    | Never cook again! We really mean that. Our subscription plans include upto 365 days/year coverage.
+                    | you can also choose to order more flexibly if that's your style.
+            .container
+                i.fas.fa-truck-moving.truck.icon
+                h3.feature-heading 30 MINUTES OR FREE
+                p.feature-para
+                    | You're only twenty minutes away from your delicious and super healthy meals delivered right to your home.
+                    | We work with the best chefs in each town to ensure that you're 100% healthy.
+            .container
+                i.fas.fa-carrot.icon
+                h3.feature-heading 100% ORGANIC
+                p.feature-para
+                    | All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics.
+                    | Good for your health, the environment, and it also tastes better!
+    section.steps
+        h2 STEPS TO FOLLOW
+        .flex-container
+            .image-container
+                img.app-img(src='./img/Capture.png', alt='food app')
+            .steps-container
+                .steps-flex-container.clearfix
+                    div 1
+                    p.steps-para
+                        | Choose the subscription plan that best fits your needs
+                        | and sign up today.
+                .steps-flex-container.clearfix
+                    div 2
+                    p.steps-para
+                        | Order your delicious meal using our mobile app or website.
+                        | Or you can even call us!
+                .steps-flex-container.clearfix
+                    div 3
+                    p.steps-para Enjoy your meal after less than 20 minutes. See you the next time!
+    section.signup
+        h2 CONTACT US
+        .signup-container
+            .video-container
+                video.bg-video(autoplay='', muted='', loop='')
+                    source(src='Avocado.mp4', type='video/mp4')
+                    | Autoplay is not supported
+            .signup-form
+                form(action='')
+                    .entry-container
+                        label(for='name') Name
+                        input#name(type='text', placeholder='Your Name')
+                    .entry-container
+                        label(for='Email') Email
+                        input#Email(type='email', placeholder='Your Email')
+                    .entry-container
+                        label(for='Options') How did you find us
+                        select#Options
+                            option(value='friends') friends
+                            option(value='search') search
+                            option(value='advertisment') advertisment
+                            option(value='other') other
+                    .entry-container
+                        label(for='feedback') Drop us a line
+                        textarea(name='feedback', id='', cols='30', rows='10')
+                    #checkbox.entry-container
+                        input#checkbox(type='checkbox', placeholder='Your Name')
+                        p.checkpara I have read and agree with all the Privacy Policy and Terms Conditions
+                    button.btn.btn-full(type='submit') Submit
+    section.reviews
+        h2 REVIEWS
+        section.david-reviews
+            .david-smith
+                h3 David Smith
+                p
+                | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis optio, laudantium, iusto reiciendis
+                | dicta odio necessitatibus tenetur quod porro minus a, labore voluptatem atque? Eius.
+                .star
+                    i.fas.fa-star.icon-star
+                    i.fas.fa-star.icon-star
+                    i.fas.fa-star.icon-star
+                    i.fas.fa-star.icon-star
+                    i.fas.fa-star.icon-star
+            .david-smith
+                h3 David Smith
+                p
+                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur esse tempora placeat error accusantium in,
+                | perferendis laudantium harum, autem voluptates quia ullam, labore dolor velit.
+                .star
+                    i.fas.fa-star.icon-star
+                    i.fas.fa-star.icon-star
+                    i.fas.fa-star.icon-star
+                    i.fas.fa-star.icon-star
+                    i.fas.fa-star.icon-star
+            .david-smith
+                h3 David Smith
+                p
+                | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint consequuntur nam molestias maiores quasi omnis a,
+                | dignissimos porro harum, quisquam, eum voluptatem doloribus commodi ipsam!
+                .star
+                    i.fas.fa-star.icon-star
+                    i.fas.fa-star.icon-star
+                    i.fas.fa-star.icon-star
+                    i.fas.fa-star.icon-star
+                    i.fas.fa-star.icon-star
+    include planSection
+
+            

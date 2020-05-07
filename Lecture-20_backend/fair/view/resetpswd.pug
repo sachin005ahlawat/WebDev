@@ -1,0 +1,12 @@
+extend base
+block content
+    .reset
+        .reset-page
+            h2 Reset Password
+            form.form(action='')
+                .password
+                    input.password-text(type='password', placeholder='password')
+                .password
+                    input.confirm-text(type='password', placeholder='confirm password')
+                .butter.btns__container
+                    button.btn.btn-full(type='submit').resetpswd Reset Password

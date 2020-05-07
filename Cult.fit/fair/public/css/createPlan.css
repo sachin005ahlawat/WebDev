@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* explain ??*/
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    /* background-color: aqua; */
+}
+.createPlan{
+    height: 84vh;
+}
+.createPlan-page{
+    height: 72.5vh;
+    width: 39%;
+    margin-left: 35rem;
+    margin-top: 1rem;
+    background-color: gainsboro;
+    position: absolute;
+    margin-top: 4.8rem;
+    padding: 1rem;
+}
+input[type="name"]{
+    padding:1rem;
+    width: 35vw;
+}
+input[type="number"]{
+    padding:1rem;
+    width: 35vw;
+}
+.duration,.price,.ratingAvrg,.discount{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    text-align: center;
+}
+.createbttn{
+    margin-left: 5rem;
+}

@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* explain ??*/
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    /* background-color: aqua; */
+}
+.manageUser{
+    height: 84vh;
+}
+.manageUser-page{
+    height: 64vh;
+    width: 31%;
+    margin-left: 41rem;
+    margin-top: 1rem;
+    background-color: gainsboro;
+    position: absolute;
+    margin-top: 6.8rem;
+    padding: 1rem;
+}

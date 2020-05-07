@@ -1,0 +1,23 @@
+nav#nav.sticky
+    ul.nav-ul
+        li.nav-li
+            a.nav-links(href='/') Features
+        li.nav-li
+            a.nav-links(href='') Details
+        li.nav-li
+            a.nav-links(href='') Reviews
+        li.nav-li
+            a.nav-links(href='/plans') Plan
+        if name
+        else
+            li.nav-li
+                a.nav-links(href='/signup') Sign Up    
+        if name
+            li.nav-li
+                a.nav-links(href='/profile') #{name}
+            li.nav-li
+                a.nav-links(href='javascript:;').logout LOGOUT
+        else
+            li.nav-li
+                a.nav-links(href='/login') LOGIN
+        

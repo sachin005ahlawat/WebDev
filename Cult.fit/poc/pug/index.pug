@@ -1,0 +1,33 @@
+document html
+html
+    head
+        title PugJS first Page
+    body
+        h1 Heading through templating
+        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae sit cum architecto, earum accusantium commodi quaerat eaque officia, illo, nisi totam dolorum harum laborum animi fuga iure impedit officiis iusto!
+        
+        p.
+            multiple line text
+            It can have second line also
+        p
+            |shfhkjgsl
+            |hfdhkdhbfk
+            |bhksgjhslghlas
+            |jbfgklglsgskl
+        h1#myid It is a myId h1
+        h1.myclass
+        #myId
+        .myclass
+        a(href="www.google.com") Go to google
+        img(src="")
+
+        //- To write java use desh"-"
+        -const classes=["color-primary","large","md-8"]
+        p(class=classes)
+        -const products=["Iphone","mac","ipad","Note8"]
+        ul
+            for product in products
+                li
+                    a(href="#")=product
+            else
+                li No product found

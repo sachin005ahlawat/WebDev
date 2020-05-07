@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* explain ??*/
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    /* background-color: aqua; */
+}
+.signUp{
+    height: 84vh;
+}
+.sign-container{
+    background-color: black;
+}
+.signUp-page{
+    height: 73vh;
+    width: 39%;
+    margin-left: 35rem;
+    margin-top: 1rem;
+    background-color: gainsboro;
+    position: absolute;
+    margin-top: 4.8rem;
+    padding: 1rem;
+}
+input[type="name"]{
+    padding:1rem;
+    width: 35vw;
+}
+.name{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    text-align: center;
+}
+.role{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    text-align: center;
+}
+/* input[type="email"]{
+    padding:1rem;
+    width: 90%;
+    border-color:darkgray;
+    margin-bottom: 1.3rem;
+    margin-left: 1.2rem;
+} */
+/* input[type="password"]{
+    padding:1rem;
+    width: 90%;
+    border-color:darkgray;
+    margin-bottom: 1.3rem;
+    margin-left: 1.2rem;
+} */
+/* .password{
+    margin-bottom: 2rem;
+    text-align: center;
+} */
+.confirm-password{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+/* .btn {
+    display: inline-block;
+    color: white;
+    font-size: 100%;
+    padding: 1rem 1.2rem;
+    background-color: #ee5253;
+    border-radius: 1.7rem;
+    border:0.1rem solid #ee5253;
+    margin-right:1rem;
+    /* change =>duration */
+    /* width: 90%;
+}
+.bttn{
+    text-align: center;
+    margin-bottom: 2rem;
+} */ 

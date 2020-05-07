@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* explain ??*/
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    /* background-color: aqua; */
+}
+.reset{
+    height: 84vh;
+}
+.reset-page{
+    height: 47%;
+    width: 39%;
+    margin-left: 35rem;
+    background-color: gainsboro;
+    position: absolute;
+    margin-top: 10rem;
+    padding: 1rem;
+}
+.butter{
+    margin-left: 3.5rem;
+}

@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* explain ??*/
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    /* background-color: aqua; */
+}
+.login-page{
+    height: 84vh;
+}
+.login-container{
+    height: 57%;
+    width: 39%;
+    margin-left: 35rem;
+    background-color: gainsboro;
+    position: absolute;
+    margin-top: 8rem;
+    padding: 1rem;
+}
+/* input[type="email"]{
+    padding:1rem;
+    width: 90%;
+    border-color:darkgray;
+} */
+input[type="password"]{
+    padding:1rem;
+    width: 35vw;
+}
+a {
+    text-decoration: none;
+    color: darkblue;
+  }
+
+
+.email{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    text-align: center;
+}
+.email-text{
+    width: 95%;
+}
+.password{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    text-align: center;
+}
+.butt{
+    margin-left: 6.6rem;
+}
+.forget{
+    margin-top: 1rem;
+    text-align: center;
+}

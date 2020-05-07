@@ -1,0 +1,18 @@
+extend base
+block  content
+    .profile
+        .profile-page
+            h2 User Page
+            .user-container
+                p.text Name :#{user.name}
+                p.text Email:#{user.email}
+                p.Image
+                    img(src=`${user.profileImage}`, alt="")
+                    input(type="file" name="photo").updateProfile
+                p.text 
+                    a.anchor(herf="/") Settings
+                if user.role=="admin"
+                    p.apara
+                        a.anchor(href="/managePlans" ) Manage Plans
+                    p.apara
+                        a.anchor(href="/manageUser") Manage User

@@ -1,0 +1,15 @@
+extend base
+block content
+    .login-page
+        .login-container
+            h2 Login
+            form.login
+                .email
+                    input.email-text(type='email', placeholder='email')
+                    br
+                .password
+                    input.password-text(type='password', placeholder='password')
+                .butt.btns__container
+                     button(type="submit").btn.btn-full LOGIN
+                .forget
+                    a.forgetpswd(href='') Forget Password

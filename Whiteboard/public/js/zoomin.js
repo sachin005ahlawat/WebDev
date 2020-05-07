@@ -13,4 +13,3 @@ zoomout.addEventListener("click",function(){
     ctx.translate(30,20)
     redraw();
 })
-© 2020 GitHub, Inc.
