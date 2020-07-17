@@ -57,6 +57,7 @@ userRouter.patch("/forgetPassword",forgetPassword)
 userRouter.patch("/resetPassword",resetPassword)
 // profile page 
 
+userRouter.route("").get(getAllUser);
 
 userRouter.use(protectRoute)
 userRouter.get("/getMe" , getUser);
@@ -65,7 +66,7 @@ userRouter.patch("/updateMe",updateUser);
 // isAuthorized
 // admin
 userRouter.use(isAuthorized(["admin"]));
-userRouter.route("").get(getAllUser);
+// userRouter.route("").get(getAllUser);
 userRouter
   .route("/:id")
   // .patch(updateUser)

@@ -7,17 +7,15 @@ nav#nav.sticky
         li.nav-li
             a.nav-links(href='') Reviews
         li.nav-li
-            a.nav-links(href='/plans') Plan
-        if name
-        else
-            li.nav-li
-                a.nav-links(href='/signup') Sign Up    
+            a.nav-links(href='/plans') Plan   
         if name
             li.nav-li
                 a.nav-links(href='/profile') #{name}
             li.nav-li
                 a.nav-links(href='javascript:;').logout LOGOUT
         else
+            li.nav-li
+                a.nav-links(href='/signup') Sign Up
             li.nav-li
                 a.nav-links(href='/login') LOGIN
         

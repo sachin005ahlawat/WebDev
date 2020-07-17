@@ -14,7 +14,10 @@ async function signup(req, res) {
     // }).catch(function(err){
     //   console.log(err)
     // })
-    
+    const id = newUser["_id"];
+    const token = jwt.sign({ id }, secrets.JWT_SECRET);
+          // header
+    res.cookie("jwt", token, { httpOnly: true });
     let options = {
       from:"foodcatchers@gmail.com",
       html:"Welcome to food Catchers",

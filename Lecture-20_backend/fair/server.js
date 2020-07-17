@@ -1,13 +1,21 @@
 const express = require("express");
+const path=require("path");
 // server create
 const app = express();
+
+const env=require("./config/secrets")["process.env.NODE_ENV"];
 const cookieParser=require("cookie-parser");
 const userRouter = require("./router/userRouter");
 const planRouter = require("./router/planRouter");
 const viewRouter=require("./router/viewRouter");
 const reviewRouter=require("./router/reviewRouter");
 const bookingRouter=require("./router/bookingRouter");
-const path=require("path");
+const ErrorExtender=require("./utility/ErrorExtender")
+const globalErrorHandler=require("./utility/globalErrorHandler")
+//global object => heroku => set variable || dev
+process.env.NODE_ENV=process.env.NODE_ENV || "dev"
+
+
 // 1.middleware
 // app.use(function f1(req, res, next) {
 //   console.log("middleware that ran before express.json in f1" + req.body);
@@ -30,8 +38,20 @@ app.use("/api/reviews",reviewRouter);
 app.use("/api/bookings",bookingRouter);
 app.use("/",viewRouter);
 
-app.listen(3000, function () {
-  console.log("Server has started at port 3000");
+//wildcard
+//404 Not Found route => error
+app.use("*",function(req,res){
+  err=new ErrorExtender ("Page Not Found",404);
+  // express feature => error pass for error handeling
+  next(err);
+})
+
+app.use("*", globalErrorHandler);
+//  server add env variable => hosting => single mutiple server host 
+
+const port=process.env.PORT||4000
+app.listen(port, function () {
+  console.log("Server has started at port 4000");
 });
 
 //3.

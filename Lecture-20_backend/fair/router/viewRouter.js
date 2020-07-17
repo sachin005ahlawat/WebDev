@@ -6,7 +6,7 @@ viewRouter.get("/",getHomePage);
 viewRouter.get("/logout",logout);
 viewRouter.get("/plans",getPlanPage);
 viewRouter.get("/login",getLoginPage);
-viewRouter.get("/signup",getSignupPage,isUserLoggedIn);
+viewRouter.get("/signup",getSignupPage);
 viewRouter.get("/trials",getTrialPage);
 viewRouter.get("/resetPassword",getResetPage);
 viewRouter.get("/manageplans",getManagePlans);

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- react actual algorithm -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <!-- Dom manipulation -->
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <!-- JSX syntax => JS  -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel"> // type => It tells the inside code to convert it into JS if its return it into JSX
+        //function name should starts with capital letter
+        //react will create an element
+        function Hello(props){
+            return <h1>Hello {props.name} are you {props.age} years old </h1>
+        }
+        //<h1> Hello </h1>
+        //JSX
+        function HelloAll(){
+            return(
+                <React.Fragment>
+                    <Hello name="Sachin" age="21"></Hello>
+                    <Hello name="Rohan" age="22"></Hello>
+                    <Hello name="Raj" age="23"></Hello>
+                    <Hello name="kabir" age="24"></Hello>
+                    <Hello name="Nitin" age="25"></Hello>
+                    <Hello name="Akash" age="26"></Hello>
+                </React.Fragment>
+            )
+        }
+
+        ReactDOM.render(<HelloAll></HelloAll>,document.getElementById("root"));
+    </script>
+</body>
+</html>

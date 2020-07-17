@@ -15,6 +15,7 @@ const { protectRoute,isAuthorized } = require("../controller/authController");
 //createPlan
 //updatePlan
 //deletePlan
+
 planRouter.use(protectRoute);
 planRouter.use(isAuthorized(["admin","restaurantowner"]));
 planRouter.post("/createplan",createPlan);
